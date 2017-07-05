@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26430.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiver.Azure.NoSql", "Fiver.Azure.NoSql\Fiver.Azure.NoSql.csproj", "{B7910F4C-AECB-401B-9B20-E6D906AF1F2B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiver.Azure.NoSql.Client", "Fiver.Azure.NoSql.Client\Fiver.Azure.NoSql.Client.csproj", "{2CE2FA4B-87D0-4684-88D9-77F356637601}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{B7910F4C-AECB-401B-9B20-E6D906AF1F2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7910F4C-AECB-401B-9B20-E6D906AF1F2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7910F4C-AECB-401B-9B20-E6D906AF1F2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CE2FA4B-87D0-4684-88D9-77F356637601}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CE2FA4B-87D0-4684-88D9-77F356637601}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CE2FA4B-87D0-4684-88D9-77F356637601}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CE2FA4B-87D0-4684-88D9-77F356637601}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
