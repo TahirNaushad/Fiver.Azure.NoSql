@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Configuration;
 using Fiver.Azure.NoSql.Client.OtherLayers;
 using Microsoft.AspNetCore.Http;
@@ -11,19 +10,12 @@ namespace Fiver.Azure.NoSql.Client
 {
     public class Startup
     {
-        public static IConfigurationRoot Configuration;
+        public static IConfiguration Configuration;
 
         public Startup(
-            IHostingEnvironment env,
-            ILoggerFactory loggerFactory)
+            IConfiguration configuration)
         {
-            var builder = new ConfigurationBuilder()
-                                .SetBasePath(env.ContentRootPath)
-                                .AddJsonFile("appsettings.json")
-                                .AddJsonFile($"appsettings.{env.EnvironmentName}.json")
-                                .AddEnvironmentVariables();
-
-            Configuration = builder.Build();
+            Configuration = configuration;
         }
 
         public void ConfigureServices(
@@ -45,8 +37,7 @@ namespace Fiver.Azure.NoSql.Client
 
         public void Configure(
             IApplicationBuilder app,
-            IHostingEnvironment env,
-            ILoggerFactory loggerFactory)
+            IHostingEnvironment env)
         {
             //app.UseDeveloperExceptionPage();
 
